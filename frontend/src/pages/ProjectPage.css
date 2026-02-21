@@ -1,0 +1,32 @@
+.project-card {
+  margin-top: 30px;
+}
+
+.project-card h2 {
+  margin-bottom: 10px;
+}
+
+.tech {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.project-buttons {
+  margin-top: 15px;
+}
+
+.project-buttons a {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: white;
+  color: #764ba2;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.project-buttons a:hover {
+  transform: scale(1.05);
+}

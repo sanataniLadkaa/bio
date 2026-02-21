@@ -60,6 +60,7 @@ body {
 .username {
   font-weight: bold;
   color: #000;
+  
 }
 
 .dots {
@@ -68,13 +69,14 @@ body {
 
 /* Image Section */
 .post-image {
-  height: 250px;
+  padding: 20px;
+  min-height: 150px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 22px;
-  font-weight: bold;
-  color: white; /* Only white inside gradient */
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
 }
 
 .gradient-bg {
@@ -125,4 +127,24 @@ body {
 
 .bottom-nav button.active {
   color: #000;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background: #333;
 }

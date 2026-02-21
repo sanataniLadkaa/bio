@@ -34,26 +34,30 @@ function Contact() {
 
         <p>
           📧{" "}
-          <a href="mailto:anurag@example.com">
-            anurag@example.com
+          <a href="mailto:tiwarianurag812@gmail.com">
+            Mail me
           </a>
         </p>
 
         <p>
           💻{" "}
-          <a href="https://github.com/anurag" target="_blank" rel="noreferrer">
-            github.com/anurag
+          <a
+            href="https://github.com/sanataniLadkaa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
           </a>
         </p>
 
         <p>
           🔗{" "}
           <a
-            href="https://linkedin.com/in/anurag"
+            href="https://www.linkedin.com/in/anurag-tiwari-34a176229/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
-            linkedin.com/in/anurag
+            LinkedIn
           </a>
         </p>
       </div>
