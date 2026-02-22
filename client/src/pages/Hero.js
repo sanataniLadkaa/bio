@@ -36,8 +36,8 @@ function Hero() {
             </a>
 
           <a 
-            href="/resume.pdf" 
-            download="Anurag_Tiwari_Resume.pdf"
+            href="/Anurag_Tiwari_2025.pdf" 
+            download="Anurag_Tiwari_2025.pdf"
             className="btn-gradient"
           >
             Get Resume ↓
