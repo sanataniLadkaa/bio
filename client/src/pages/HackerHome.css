@@ -78,3 +78,27 @@ ul {
 li {
   margin-bottom: 5px;
 }
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    order: 1;
+  }
+
+  .code-card {
+    order: 2;
+    width: 100%;
+  }
+
+  .hero-icons {
+    justify-content: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
