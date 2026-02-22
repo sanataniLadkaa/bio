@@ -23,7 +23,7 @@ function Projects() {
       tech: "Generative AI • FastAPI • BERT",
       description:
         "Built AI-powered recruitment platform using resume embeddings and RAG-based summarization with secure role-based access control.",
-      github: "https://github.com/sanataniLadkaa/jobai",
+      github: "https://github.com/sanataniLadkaa/jobai/tree/stagging",
     },
   ];
 

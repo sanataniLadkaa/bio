@@ -610,3 +610,20 @@ body::after {
 .social-icons a:hover {
   background: #ff4ecd;
 }
+
+.code-card {
+  flex: 1;
+  max-width: 600px;   /* Increased size */
+  min-width: 350px;
+  background: rgba(20, 20, 35, 0.7);
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  transition: 0.4s ease;
+}
+
+.code-card:hover {
+  transform: translateY(-10px) rotateX(4deg) rotateY(-4deg);
+}

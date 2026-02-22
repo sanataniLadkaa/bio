@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "./Portfolio.css";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
@@ -28,7 +28,6 @@ function Hero() {
           <div className="hero-icons">
             <FaGithub />
             <FaLinkedin />
-            <FaTwitter />
           </div>
 
           <div className="hero-buttons">

@@ -1,28 +1,71 @@
 import "./Portfolio.css";
-import { FaBootstrap, FaFigma, FaPython } from "react-icons/fa";
-import { SiFirebase, SiCplusplus, SiStrapi, SiGooglecloud, SiMui } from "react-icons/si";
+
+import {
+  FaPython,
+  FaJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaNodeJs,
+  FaDocker,
+  FaGitAlt,
+  FaLinux
+} from "react-icons/fa";
+
+import {
+  SiCplusplus,
+  SiMysql,
+  SiFastapi,
+  SiFlask,
+  SiPytorch,
+  SiScikitlearn,
+  SiHuggingface,
+  SiOpencv,
+  SiAmazon,
+  SiSupabase
+} from "react-icons/si";
 
 function Skills() {
-
   const skills = [
-    { name: "GCP", icon: <SiGooglecloud /> },
-    { name: "Bootstrap", icon: <FaBootstrap /> },
-    { name: "Figma", icon: <FaFigma /> },
-    { name: "Firebase", icon: <SiFirebase /> },
-    { name: "Material UI", icon: <SiMui /> },
-    { name: "C++", icon: <SiCplusplus /> },
-    { name: "Strapi", icon: <SiStrapi /> },
+    // Languages
     { name: "Python", icon: <FaPython /> },
+    { name: "C/C++", icon: <SiCplusplus /> },
+    { name: "SQL", icon: <SiMysql /> },
+    { name: "JavaScript", icon: <FaJs /> },
+    { name: "HTML", icon: <FaHtml5 /> },
+    { name: "CSS", icon: <FaCss3Alt /> },
+
+    // Frameworks
+    { name: "FastAPI", icon: <SiFastapi /> },
+    { name: "Flask", icon: <SiFlask /> },
+    { name: "Node.js", icon: <FaNodeJs /> },
+    { name: "React", icon: <FaReact /> },
+
+    // Machine Learning
+    { name: "PyTorch", icon: <SiPytorch /> },
+    { name: "Scikit-learn", icon: <SiScikitlearn /> },
+    { name: "HuggingFace", icon: <SiHuggingface /> },
+    { name: "CLIP", icon: "🤖" },
+
+    // Computer Vision
+    { name: "YOLOv5", icon: "🎯" },
+    { name: "DeepFace", icon: "👤" },
+    { name: "Stable Diffusion", icon: "🖼️" },
+    { name: "OpenCV", icon: <SiOpencv /> },
+
+    // Tools & Platforms
+    { name: "Docker", icon: <FaDocker /> },
+    { name: "AWS (Lambda, EC2)", icon: <SiAmazon /> },
+    { name: "Supabase", icon: <SiSupabase /> },
+    { name: "Git", icon: <FaGitAlt /> },
+    { name: "Linux", icon: <FaLinux /> },
   ];
 
   return (
     <section className="skills section" id="skills">
-
-      <h2 className="skills-title">Skills</h2>
+      <h2 className="skills-title">Technical Skills</h2>
 
       <div className="skills-slider">
-
-        {/* Duplicate list for infinite loop */}
         <div className="skills-track">
           {[...skills, ...skills].map((skill, index) => (
             <div className="skill-card" key={index}>
@@ -31,7 +74,6 @@ function Skills() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

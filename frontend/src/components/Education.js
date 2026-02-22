@@ -49,9 +49,9 @@ function Education() {
             transition={{ duration: 0.9 }}
             viewport={{ once: true }}
           >
-            <p className="edu-date">2019 - 2021</p>
+            <p className="edu-date">2019 - 2020</p>
             <h3>Higher Secondary Certificate</h3>
-            <h4>RPM Academy Gorakhpur</h4>
+            <h4>DAV Centenary Public School</h4>
 
             <div className="edu-content">
               <FaUserGraduate className="edu-icon" />
@@ -66,9 +66,9 @@ function Education() {
             transition={{ duration: 1.1 }}
             viewport={{ once: true }}
           >
-            <p className="edu-date">2018 - 2019</p>
-            <h3>Secondary School Certificate</h3>
-            <h4>P.D Academy Deoria</h4>
+            <p className="edu-date">2017 - 2018</p>
+            <h3>High School Certificate</h3>
+            <h4>DAV Centenary Public School</h4>
 
             <div className="edu-content">
               <FaUserGraduate className="edu-icon" />
