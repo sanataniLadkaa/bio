@@ -1,81 +1,88 @@
-import React from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
+import { FaGithub, FaLinkedinIn, FaFacebookF, FaPhoneAlt } from "react-icons/fa";
+import { MdEmail, MdLocationOn } from "react-icons/md";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Contact() {
-  const navigate = useNavigate();
-  const location = useLocation();
-
   return (
-    <div className="insta-feed">
+    <motion.section
+      id="contact"
+      className="contact-section"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <h2 className="contact-title">CONTACT WITH ME</h2>
 
-      {/* Instagram Header */}
-      <div className="insta-header">
-        <h2>Instagram</h2>
-        <div>🤍 ✉️</div>
-      </div>
+      <div className="contact-container">
+        {/* LEFT SIDE - FORM */}
+        <div className="contact-form">
+          <p className="contact-text">
+            If you have any questions or concerns, please don't hesitate to
+            contact me. I am open to any work opportunities that align with my
+            skills and interests.
+          </p>
 
-      {/* Profile Section */}
-      <div className="profile-header">
-        <div className="profile-circle"></div>
-        <div>
-          <h3 className="username">anurag_tiwari</h3>
-          <p className="bio-text">AI Developer | RAG | ML Systems</p>
+          <form>
+            <label>Your Name:</label>
+            <input type="text" placeholder="Enter your name" />
+
+            <label>Your Email:</label>
+            <input type="email" placeholder="Enter your email" />
+
+            <label>Your Message:</label>
+            <textarea rows="5" placeholder="Write your message..." />
+
+            <button type="submit" className="send-btn">
+              SEND MESSAGE
+            </button>
+          </form>
+        </div>
+
+        {/* RIGHT SIDE - CONTACT INFO */}
+        <div className="contact-info">
+          <div className="info-item">
+            <MdEmail className="info-icon" />
+            <span>tiwarianurag812@gmail.com</span>
+          </div>
+
+          <div className="info-item">
+            <FaPhoneAlt className="info-icon" />
+            <span>+91 8168596522</span>
+          </div>
+
+          <div className="info-item">
+            <MdLocationOn className="info-icon" />
+            <span>Varanasi, Uttar Pradesh</span>
+          </div>
+
+          <div className="social-icons">
+            <a href="https://github.com/sanataniLadkaa" target="_blank" rel="noreferrer">
+              <FaGithub />
+            </a>
+            <a href="https://linkedin.com/in/anurag-tiwari" target="_blank" rel="noreferrer">
+              <FaLinkedinIn />
+<a
+  href="https://twitter.com/yourusername"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaXTwitter />
+</a>
+
+<a
+  href="https://facebook.com/yourusername"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaFacebookF />
+</a>
+            </a>
+          </div>
         </div>
       </div>
-
-      {/* Action Buttons */}
-      <div className="profile-actions">
-        <button className="message-btn">Message</button>
-      </div>
-
-      {/* Contact Card */}
-      <div className="contact-card">
-        <h3>Contact Info</h3>
-
-        <p>
-          📧{" "}
-          <a href="mailto:anurag@example.com">
-            anurag@example.com
-          </a>
-        </p>
-
-        <p>
-          💻{" "}
-          <a href="https://github.com/anurag" target="_blank" rel="noreferrer">
-            github.com/anurag
-          </a>
-        </p>
-
-        <p>
-          🔗{" "}
-          <a
-            href="https://linkedin.com/in/anurag"
-            target="_blank"
-            rel="noreferrer"
-          >
-            linkedin.com/in/anurag
-          </a>
-        </p>
-      </div>
-
-      {/* Bottom Navigation */}
-      <div className="bottom-nav">
-        <button
-          onClick={() => navigate("/")}
-          className={location.pathname === "/" ? "active" : ""}
-        >
-          🏠
-        </button>
-
-        <button
-          onClick={() => navigate("/contact")}
-          className={location.pathname === "/contact" ? "active" : ""}
-        >
-          💬
-        </button>
-      </div>
-
-    </div>
+    </motion.section>
   );
 }
 
