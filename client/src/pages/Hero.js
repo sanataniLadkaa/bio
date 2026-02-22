@@ -35,9 +35,13 @@ function Hero() {
               Contact Me
             </a>
 
-            <a href="/resume.pdf" className="btn-gradient">
-              Get Resume ↓
-            </a>
+          <a 
+            href="/resume.pdf" 
+            download="Anurag_Tiwari_Resume.pdf"
+            className="btn-gradient"
+          >
+            Get Resume ↓
+          </a>
           </div>
         </div>
 
